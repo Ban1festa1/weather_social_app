@@ -95,13 +95,35 @@ lib/
 
 ## Запуск проекта
 
-Перед запуском необходимо установить Flutter SDK и Android Studio.
+Перед запуском необходимо установить:
 
-Команды для запуска:
+* Flutter SDK;
+* Android Studio;
+* Android SDK;
+* Android-эмулятор или подключить Android-устройство.
+
+Проверить окружение можно командой:
+
+```bash
+flutter doctor
+```
+
+Установить зависимости проекта:
 
 ```bash
 flutter pub get
+```
+
+Запустить приложение:
+
+```bash
 flutter run
+```
+
+Если используется Android-эмулятор и возникают проблемы с debug-соединением, можно запустить так:
+
+```bash
+flutter run --disable-dds
 ```
 
 Для анализа проекта:
@@ -109,4 +131,6 @@ flutter run
 ```bash
 flutter analyze
 ```
+
+
 
